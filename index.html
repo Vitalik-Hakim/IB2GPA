@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IB to GPA Converter</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SKCVFTDB8B"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SKCVFTDB8B");
+  </script>
+  <body>
+    <div class="container">
+      <div class="ad-space-left"><img src="" alt="" /></div>
+      <!-- ADS HERE -->
+      <div class="main-content">
+        <h1 class="headline">Convert your IB grades to GPA</h1>
+        <form>
+          <div class="MAIN-APP">
+            <h4>*This is unofficial and not exactly accurate*</h4>
+            <div class="HL">
+              <h3>HL Subjects Grade(1-7)</h3>
+              <input
+                type="number"
+                name="Subject-1-hl"
+                id="ib1"
+                placeholder="HL Subject 1 eg. 5"
+              />
+              <input
+                type="number"
+                name="Subject-2-hl"
+                id="ib2"
+                placeholder="HL 2"
+              />
+              <input
+                type="number"
+                name="Subject-3-hl"
+                id="ib3"
+                placeholder="HL 3"
+              />
+            </div>
+
+            <div class="SL">
+              <h3>SL Subjects Grade(1-7)</h3>
+              <input
+                type="number"
+                name="Subject-1-sl"
+                id="ib4"
+                placeholder="SL 1"
+              />
+              <input
+                type="number"
+                name="Subject-2-sl"
+                id="ib5"
+                placeholder="SL 2"
+              />
+              <input
+                type="number"
+                name="Subject-3-sl"
+                id="ib6"
+                placeholder="SL 3"
+              />
+            </div>
+
+            <button type="button" onclick="calculateGPA()">
+              Calculate GPA
+            </button>
+            <div class="result" id="results"><img src="" alt="" /></div>
+          </div>
+        </form>
+      </div>
+      <div class="ad-space-right"></div>
+      <!-- ADS HERE -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
