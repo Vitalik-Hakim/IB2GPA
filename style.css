@@ -95,3 +95,32 @@ button:hover {
   padding: 1em;
   text-align: center;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+#api-button {
+    background-color: #3e8e41;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+#api-button:hover {
+    background-color: #357a38;
+}
