@@ -13,7 +13,7 @@ function calculateGPA() {
   let ib5 = document.querySelector("#ib5").value;
   let ib6 = document.querySelector("#ib6").value;
   function fetchGPA(ib1, ib2, ib3, ib4, ib5, ib6) {
-    const url = "http://127.0.0.1:5000/calculate-gpa";
+    const url = "https://ib2gpa.onrender.com/calculate-gpa";
 
     const params = {
       ib1: ib1,
