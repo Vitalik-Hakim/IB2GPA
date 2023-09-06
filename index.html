@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convert your IB grades into GPA" />
+    <meta
+      name="keywords"
+      content="ib to gpa, Ib grade, gpa, ib2gpa converter, convert ib grades"
+    />
+    <meta name="author" content="vitalik-hakim" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IB to GPA Converter</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="icon.png" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SKCVFTDB8B"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SKCVFTDB8B");
+  </script>
+  <body>
+    <nav>
+      <a href="/" target="_blank">Home</a>
+      <a
+        href="https://raw.githubusercontent.com/vitalik-hakim/TABLES404/main/imgs/ib2gpa%20scale.png"
+        target="_blank"
+        >Scale</a
+      >
+      <a href="https://vitalikhakim.tech/" target="_blank">Author</a>
+      <a
+        href="https://github.com/Vitalik-Hakim/IB2GPA"
+        id="api-button"
+        target="_blank"
+        >Github Source</a
+      >
+    </nav>
+    <div class="container">
+      <div class="ad-space-left">
+        <h1>Grade Scale</h1>
+        <div class="image-card">
+          <a
+            href="https://raw.githubusercontent.com/vitalik-hakim/TABLES404/main/imgs/ib2gpa%20scale.png"
+            target="_blank"
+          >
+            <!-- Replace "image-link-url" with your image's URL -->
+            <img
+              src="https://raw.githubusercontent.com/vitalik-hakim/TABLES404/main/imgs/ib2gpa%20scale.png"
+              alt="Image"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h1 class="headline">Convert your IB grades to GPA</h1>
+        <form>
+          <div class="MAIN-APP">
+            <h4>*This is unofficial and not exactly accurate*</h4>
+            <div class="HL">
+              <h3>HL Subjects Grade(1-7)</h3>
+              <select name="Subject-1-hl" id="ib1">
+                <option value="Null">HL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <select name="Subject-2-hl" id="ib2">
+                <option value="Null">HL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <select name="Subject-3-hl" id="ib3">
+                <option value="Null">HL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+
+            <div class="SL">
+              <h3>SL Subjects Grade(1-7)</h3>
+
+              <select name="Subject-1-sl" id="ib4">
+                <option value="Null">SL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <select name="Subject-2-sl" id="ib5">
+                <option value="Null">SL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <select name="Subject-3-sl" id="ib6">
+                <option value="Null">SL</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+
+            <button type="button" onclick="calculateGPA()">
+              Calculate GPA
+            </button>
+            <div class="result" id="results"><img src="" alt="" /></div>
+          </div>
+        </form>
+      </div>
+      <div class="ad-space-right">
+        <!-- ADS HERE -->
+        <div class="additional-info">
+          <h2 class="disclaimer-title">Disclaimer!</h2>
+          <p class="disclaimer-text">
+            This tool provides an approximate conversion of IB grades to GPA and
+            should be used as a reference only. Actual grade conversions may
+            vary between universities and institutions. The results obtained
+            from this tool are not official and should not replace official
+            evaluations. It is advisable to consult with your intended
+            university or institution for precise grade conversion requirements,
+            as they may have their own specific criteria. This tool is intended
+            to give you a general idea of the range you may fall into.
+          </p>
+        </div>
+
+        <!-- <div class="link-directory">
+          <h2>Resources for Conversion</h2>
+          <ul>
+            <li>
+              <a href="https://www.collegevine.com/questions/2888/ib-to-gpa"
+                >College Vine Question</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.giasuib.com/en/how-to-convert-ib-scores-to-gpa/"
+                >Giasu IB</a
+              >
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
